@@ -10,7 +10,13 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+//
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// app/Http/routes.php
+
+Route::get('/', 'WelcomeController@index');
+Route::get('contact', 'WelcomeController@contact');
