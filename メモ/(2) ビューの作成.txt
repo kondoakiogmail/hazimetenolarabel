@@ -1,0 +1,18 @@
+■ROUTING
+　・contactへのGETアクセスの設定ファイル名が違う。
+　　　app/Http/routes.php
+　　　↓
+　　　app/routes/web.php
+
+■CONTROLLER
+　・namespaceが不正
+　　WelcomeController.phpのnamespace
+　　　namespace AppHttpControllers;
+　　　↓
+　　　namespace App\Http\Controllers;
+
+■VIEW
+　・viewディレクトリが違う場所にある。
+　　　app/resources/view/contact.blade.php
+　　　↓
+　　　resources/view/contact.blade.php
