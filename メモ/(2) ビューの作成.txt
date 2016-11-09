@@ -2,7 +2,21 @@
 　・contactへのGETアクセスの設定ファイル名が違う。
 　　　app/Http/routes.php
 　　　↓
-　　　app/routes/web.php
+　　　routes/web.php
+手順
+1.編集するファイルまで移動
+cd /var/www/html/laravel/sample/routes/
+
+2.viコマンドで編集
+vi web.php
+
+3.もともとの書かれているものを下記のように書き換える。
+<?php
+
+Route::get('/', 'WelcomeController@index');
+Route::get('contact', 'WelcomeController@contact');
+22:17
+   
 
 ■CONTROLLER
 　・namespaceが不正
